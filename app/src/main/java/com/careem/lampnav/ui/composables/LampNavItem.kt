@@ -23,7 +23,6 @@ import com.careem.lampnav.ui.theme.LampNavTheme
 @Composable
 fun LampNavItem(
     icon: ImageVector,
-    selected: Boolean,
     size: Size = Size(64f, 54f),
     onTap: () -> Unit
 ) {
@@ -37,33 +36,48 @@ fun LampNavItem(
             ),
         contentAlignment = Alignment.TopCenter,
     ) {
-        if (selected) Box(modifier = Modifier.fillMaxSize()) {
-            Column(Modifier.fillMaxWidth(), horizontalAlignment = Alignment.CenterHorizontally) {
-                Box(
-                    modifier = Modifier
-                        .size((0.7 * size.width).dp, (0.07 * size.height).dp)
-                        .clip(RoundedCornerShape((0.07 * size.height).dp))
-                        .background(color = Color.White)
-                )
-                Lamp()
-            }
-        }
-        Column(
-            modifier = Modifier
-                .fillMaxSize()
-                .fillMaxHeight(),
-            verticalArrangement = Arrangement.Center,
-            horizontalAlignment = Alignment.CenterHorizontally
-        ) {
-            Icon(imageVector = icon, contentDescription = null, tint = Color.White)
-        }
+        NavIcon(icon)
     }
+}
+
+@Composable
+fun NavIndicatorItem(size: Size, navRoute: String?) {
+    Column(Modifier.fillMaxWidth(), horizontalAlignment = Alignment.CenterHorizontally) {
+        NavTopIndicator(size)
+        Lamp(size, navRoute = navRoute)
+    }
+}
+
+@Composable
+private fun NavIcon(icon: ImageVector) {
+    Column(
+        modifier = Modifier
+            .fillMaxSize()
+            .fillMaxHeight(),
+        verticalArrangement = Arrangement.Center,
+        horizontalAlignment = Alignment.CenterHorizontally
+    ) {
+        Icon(imageVector = icon, contentDescription = null, tint = Color.White)
+    }
+}
+
+@Composable
+private fun NavTopIndicator(size: Size) {
+    Box(
+        modifier = Modifier
+            .size((0.7 * size.width).dp, (0.07 * size.height).dp)
+            .clip(RoundedCornerShape((0.07 * size.height).dp))
+            .background(color = Color.White)
+    )
 }
 
 @Preview(showBackground = true)
 @Composable
-fun LampNavItemPreview() {
+private fun LampNavItemSelectedPreview() {
     LampNavTheme {
-        LampNavItem(Icons.Default.Home, true) {}
+        Box(Modifier.size(64.dp, 54.dp)) {
+            LampNavItem(Icons.Default.Home) {}
+            NavIndicatorItem(size = Size(64f, 54f), null)
+        }
     }
 }

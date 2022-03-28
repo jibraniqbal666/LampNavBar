@@ -1,0 +1,109 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="issues">
+    <option name="index">
+      <map>
+        <entry key="$PROJECT_DIR$/app/build.gradle">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/app/src/main/java/com/careem/lampnav/MainActivity.kt">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/app/src/main/java/com/careem/lampnav/ui/composables/Lamp.kt">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/app/src/main/java/com/careem/lampnav/ui/composables/LampNavBar.kt">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/app/src/main/java/com/careem/lampnav/ui/composables/LampNavItem.kt">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/app/src/main/java/com/careem/lampnav/ui/composables/LampNavLayout.kt">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/build.gradle">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/../android/app/src/main/java/com/hellofresh/androidapp/features/editmodetoolbar/ui/middleware/HelloShareFreebieAvailableMiddleware.kt">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/../android/app/src/main/java/com/hellofresh/androidapp/features/editmodetoolbar/ui/middleware/MealChoiceDoneMiddleware.kt">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/../android/app/src/main/java/com/hellofresh/androidapp/features/editmodetoolbar/ui/model/EditableMenuToolbarIntent.kt">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/../android/app/src/main/java/com/hellofresh/androidapp/features/editmodetoolbar/ui/model/EditableMenuToolbarState.kt">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/../android/app/src/main/java/com/hellofresh/androidapp/features/editmodetoolbar/ui/reducer/EditableMenuToolbarReducer.kt">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/../android/app/src/main/java/com/hellofresh/androidapp/features/helloshare/model/HelloShareFreebiesVisibility.kt">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/../android/app/src/main/java/com/hellofresh/androidapp/features/helloshare/model/HelloShareSliderEvent.kt">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/../android/app/src/main/java/com/hellofresh/androidapp/features/helloshare/usecase/GetHelloShareFreebiesUseCase.kt">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/../android/app/src/main/java/com/hellofresh/androidapp/features/helloshare/utils/SingleEvent.kt">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/../android/app/src/main/java/com/hellofresh/androidapp/features/home/domain/usecase/GetReferralCreditByCountryUseCase.kt">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/../android/app/src/main/java/com/hellofresh/androidapp/ui/flows/deliveryheader/banner/usecase/IsFreebiesBannerVisibleUseCase.kt">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/../android/app/src/main/java/com/hellofresh/androidapp/ui/flows/subscription/overview/menu/mymenu/HelloShareFreebieBottomSheet.kt">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/../android/app/src/main/java/com/hellofresh/androidapp/ui/flows/subscription/overview/menu/mymenu/MyMenuFragment.kt">
+          <value>
+            <set />
+          </value>
+        </entry>
+      </map>
+    </option>
+  </component>
+</project>

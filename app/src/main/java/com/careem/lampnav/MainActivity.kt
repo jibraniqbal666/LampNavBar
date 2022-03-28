@@ -4,11 +4,7 @@ import android.os.Bundle
 import androidx.activity.ComponentActivity
 import androidx.activity.compose.setContent
 import androidx.compose.foundation.layout.Box
-import androidx.compose.foundation.layout.Row
 import androidx.compose.foundation.layout.fillMaxSize
-import androidx.compose.foundation.layout.padding
-import androidx.compose.foundation.shape.RoundedCornerShape
-import androidx.compose.material.Card
 import androidx.compose.material.Scaffold
 import androidx.compose.material.Text
 import androidx.compose.material.icons.Icons
@@ -17,15 +13,13 @@ import androidx.compose.runtime.Composable
 import androidx.compose.runtime.getValue
 import androidx.compose.ui.Alignment
 import androidx.compose.ui.Modifier
-import androidx.compose.ui.unit.dp
 import androidx.compose.ui.unit.sp
-import androidx.navigation.NavDestination
 import androidx.navigation.NavHostController
 import androidx.navigation.compose.NavHost
 import androidx.navigation.compose.composable
 import androidx.navigation.compose.currentBackStackEntryAsState
 import androidx.navigation.compose.rememberNavController
-import com.careem.lampnav.ui.composables.LampNavItem
+import com.careem.lampnav.ui.composables.LampNavBar
 import com.careem.lampnav.ui.model.NavRoute
 import com.careem.lampnav.ui.theme.LampNavTheme
 
@@ -76,25 +70,4 @@ fun AppNavHost(navRoutes: List<NavRoute>, navController: NavHostController) {
         }
     }
 }
-
-@Composable
-fun LampNavBar(
-    navRoutes: List<NavRoute>,
-    navController: NavHostController,
-    currentDestination: NavDestination?
-) {
-    Card(elevation = 8.dp, modifier = Modifier.padding(8.dp), shape = RoundedCornerShape(8.dp)) {
-        Row {
-            navRoutes.forEach { route ->
-                LampNavItem(
-                    icon = route.iconVector,
-                    selected = currentDestination?.route == route.destination
-                ) {
-                    navController.navigate(route.destination)
-                }
-            }
-        }
-    }
-}
-
 
